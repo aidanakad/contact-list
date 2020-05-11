@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Title from './Title'
+import ContactList from './ContactList'
 
 const contactsArray = [
   {
@@ -25,7 +27,8 @@ const contactsArray = [
 function App() {
   return(
   <div className="App">
-    <h1></h1>
+    <Title title ="Contact List"/>
+    <ContactList contact={contactsArray}/>
   </div>
   )
 }
