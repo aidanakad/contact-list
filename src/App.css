@@ -1,7 +1,39 @@
-h1, body{
+body{
+    font-family:sans-serif;
+}
+
+h1, h2, body{
     margin: 0;
 }
 
-div{
+h2{
+    margin-bottom: 10px;
+}
+
+.title{
     margin-bottom: 20px;
+    text-align: center;
+}
+.contact-list{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: #e2e0e0;
+    line-height: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+img{
+    margin: 25px 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.info{
+    margin-top: 29px;
+    font-size: 20px;
 }

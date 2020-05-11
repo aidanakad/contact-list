@@ -6,10 +6,15 @@ export default function ContactList(props){
             {
                 props.contact.map((person, index)=>{
                     return(
-                    <div key={index}> 
-                        <div className="first-contact">{person.name}</div> 
-                        <div className="second-contact">{person.phone}</div>
-                        <div className="third-contact">{person.address}</div>
+                    <div key={index} className="contact-list"> 
+                        <div className="img">
+                            <img src={person.imgSrc} />
+                        </div>
+                        <div className="info">
+                            <h2 >{person.name}</h2> 
+                            <div >{person.phone}</div>
+                            <div >{person.address}</div>
+                        </div>                        
                     </div>
                     )
                 })
